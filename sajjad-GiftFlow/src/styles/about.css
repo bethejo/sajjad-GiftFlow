@@ -1,0 +1,24 @@
+.team-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center-align the cards horizontally */
+}
+
+.team-card {
+  flex: 1 1 200px; /* Adjusted flex basis to make cards smaller */
+  background-color: transparent;
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure cards don't exceed their container width */
+}
+
+@media (min-width: 768px) {
+  .team-card {
+    flex: 1 1 calc(25% - 20px); /* Four cards per row with gap */
+  }
+}
+
+.title {
+  color: grey;
+}
+
